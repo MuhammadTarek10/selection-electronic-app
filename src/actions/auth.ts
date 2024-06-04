@@ -9,3 +9,13 @@ export const login = async (username: string, password: string) => {
 
   redirect("/dashboard");
 };
+
+export const logout = async () => {
+  cookies().set("token", "", { expires: new Date(0) });
+
+  redirect("/");
+};
+
+export const isAuthenticated = () => {
+  return cookies().get("token") !== undefined;
+};

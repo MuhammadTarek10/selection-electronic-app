@@ -1,22 +1,28 @@
-import { NavButton } from "../../components/NavButton";
+import { LogoutButton } from "@/components/LogoutButton";
+import { NavButton } from "@/components/NavButton";
+import Image from "next/image";
 
-const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
+const DashboardLayout = (props: { children: React.ReactNode }) => {
   return (
-    <div className="h-screen w-screen relative">
+    <div className="bg-robot bg-cover">
       <aside>
-        <div className="h-full w-[200px] fixed bg-gray-800 border-r border-black/10">
-          <div className="h-[60px] border-b border-black/10 flex items-center justify-center">
-            <h1 className="text-lg font-bold">Dashboard</h1>
+        <div className="h-full w-[200px] fixed bg-gradient-to-b from-gray-400 border-r border-black/10">
+          <div className="h-[60px] border-black/10 flex items-center justify-center">
+            <div className="flex items-center gap-4">
+              <Image src="/images/logo.png" alt="الحرب الإلكترونية" width={50} height={50}  />
+              <h1 className="text-2xl font-bold">لوحة التحكم</h1>
+            </div>
           </div>
           <nav className="h-[calc(100vh-60px)] overflow-y-auto">
             <ul className="h-full p-4 flex flex-col justify-between">
               <div>
-                <NavButton name="Home" url="/dashboard" />
-                <NavButton name="Fixing" url="/fixing" />
-                <NavButton name="Cases" url="/case" />
+                <NavButton name="الرئيسية" url="/dashboard" />
+                <NavButton name="الحالات" url="/dashboard/cases" />
+                <NavButton name="التصليحات" url="/dashboard/fixing" />
+                <NavButton name="تحليل البيانات" url="/dashboard/analytics" />
               </div>
               <div>
-                <NavButton name="Logout" url="/logout" color="red" />
+                <LogoutButton />
               </div>
             </ul>
           </nav>
@@ -26,7 +32,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
         <header className="h-[60px] border-b border-black/10">
           <div className="h-full w-full flex justify-end items-center px-6"></div>
         </header>
-        <div className="h-[calc(100vh-60px)]">{children}</div>
+        <div className="h-[calc(100vh-60px)]">{props.children}</div>
       </div>
     </div>
   );

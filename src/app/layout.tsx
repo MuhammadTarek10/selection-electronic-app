@@ -1,3 +1,5 @@
+import { LogoutButton } from "@/components/LogoutButton";
+import { NavButton } from "@/components/NavButton";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -19,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/icons/map.svg" />
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className}`}>
+        <div>{children}</div>
+      </body>
     </html>
   );
 }

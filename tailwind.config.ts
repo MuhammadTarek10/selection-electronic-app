@@ -9,6 +9,8 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         hacking: "url('/images/hacking.jpg')",
         home: "url('/images/home.jpg')",
+        logo: "url('/images/logo.png')",
+        robot: "url('/images/robot.jpg')",
       },
     },
   },
