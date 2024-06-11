@@ -7,7 +7,7 @@ const Dashboard = async () => {
   };
 
   return (
-    <div className="flex gap-4 justify-end">
+    <div className="flex gap-4 justify-end mx-4">
       <div className="flex-1">
         <Container props={data} />
       </div>

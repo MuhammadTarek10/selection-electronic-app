@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const DashboardLayout = (props: { children: React.ReactNode }) => {
   return (
-    <div>
+    <div className="bg-black">
       <aside>
         <div className="h-full w-[200px] fixed bg-gradient-to-b from-gray-400 border-r border-black/10">
           <div className="h-[60px] border-black/10 flex items-center justify-center">
