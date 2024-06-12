@@ -14,8 +14,8 @@ export const ExaminersTable = ({ props }: IProps) => {
   const { examiners } = props;
 
   return (
-    <div className="w-full flex flex-1 border-2 rounded-lg border-white/25">
-      <DataTable columns={columns} data={examiners} />
+    <div className="flex-1 border-2 rounded-lg border-white/25">
+      <DataTable columns={columns} data={examiners} divClassname="max-h-[600px]"/>
     </div>
   );
 };

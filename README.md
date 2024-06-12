@@ -26,7 +26,7 @@ npm run dev
 1. Dashboard
    1. See all Examiners (Table). [TODO] [DB] [UI]
    2. How many technicians (Container). [TODO] [DB] [UI]
-   3. Noticeable Soldiers (Table). [TODO] [DB]
+   3. Noticeable Soldiers (Table). [TODO] [DB] [UI]
    4. Getting exams value (Button to another page). [TODO] [DB]
    5. Export data to a csv and xlsx. [TODO]
 2. Cases

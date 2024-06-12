@@ -7,9 +7,10 @@ import * as React from "react";
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
+  divClassname?: string;
 }
 
-export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData, TValue>) {
+export function DataTable<TData, TValue>({ columns, data, divClassname }: DataTableProps<TData, TValue>) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
 
   const table = useReactTable({
@@ -31,7 +32,7 @@ export function DataTable<TData, TValue>({ columns, data }: DataTableProps<TData
 
   return (
     <div className="rounded-md border w-full text-center">
-      <Table>
+      <Table divClassname={divClassname}>
         <TableHeader className="w-full top-0 sticky bg-gray-800">
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id}>

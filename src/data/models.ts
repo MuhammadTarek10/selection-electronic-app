@@ -11,21 +11,21 @@ export type Examiner = {
 };
 
 export type Case = {
-  id: number;
-  name: string;
-  examiner_id: number;
-  sold_id: string | null;
-  final_opinion: string | null;
-  final_hospital_result: string | null;
-  examiner_status: string | null;
+  id?: number;
+  name?: string;
+  examiner_id?: number;
+  sold_id?: string | null;
+  final_opinion?: string | null;
+  final_hospital_result?: string | null;
+  examiner_status?: string | null;
 };
 
 export type ExaminerExam = {
-  examiner: Examiner;
-  exams: Exam[];
+  examiner?: Examiner;
+  exams?: Exam[];
 };
 
 export type Exam = {
-  id: number;
-  value: string;
+  id?: number;
+  value?: string;
 };

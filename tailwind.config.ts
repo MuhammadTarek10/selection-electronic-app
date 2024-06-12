@@ -12,6 +12,14 @@ const config = {
         "2xl": "1400px",
       },
     },
+
+    gridTemplateColumns: {
+      "auto-1fr": "auto 1fr",
+      "1fr-auto": "1fr auto",
+      "auto-1fr-auto": "auto 1fr auto",
+      "auto-1fr-auto-1fr": "auto 1fr auto 1fr",
+      "auto-1fr-auto-1fr-auto": "auto 1fr auto 1fr auto",
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
