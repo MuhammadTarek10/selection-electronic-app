@@ -1,0 +1,21 @@
+import { DataTable } from "@/components/ui/data-table";
+import { Examiner } from "@/data/models";
+import { columns } from "./ExaminerTableColumns";
+
+type ExaminerTableProps = {
+  examiners: Examiner[];
+};
+
+type IProps = {
+  props: ExaminerTableProps;
+};
+
+export const ExaminersTable = ({ props }: IProps) => {
+  const { examiners } = props;
+
+  return (
+    <div className="w-full flex flex-1 border-2 rounded-lg border-white/25">
+      <DataTable columns={columns} data={examiners} />
+    </div>
+  );
+};

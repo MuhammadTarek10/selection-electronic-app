@@ -1,4 +1,6 @@
-import { Container } from "@/components/ui/Container";
+import { NumberContainer } from "@/components/ui/number-container";
+import { ExaminersTable } from "./components/ExaminersTable";
+import { examinersDummy } from "@/data/dummy/data";
 
 const Dashboard = async () => {
   const data = {
@@ -7,12 +9,14 @@ const Dashboard = async () => {
   };
 
   return (
-    <div className="flex gap-4 justify-end mx-4">
-      <div className="flex-1">
-        <Container props={data} />
-      </div>
-      <div className="flex-2">
-        <Container props={data} />
+    <div id="container">
+      <div className="flex gap-12 justify-end mx-4" id="header">
+        <div className="flex-1">
+          <ExaminersTable props={examinersDummy} />
+        </div>
+        <div className="flex flex-col gap-4">
+          <NumberContainer props={data} />
+        </div>
       </div>
     </div>
   );

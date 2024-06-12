@@ -1,13 +1,13 @@
 export type Examiner = {
-  id: number;
-  name: string;
-  stage: string;
-  sold_id: string | null;
-  mohafza_code: number | null | undefined;
-  qualification_code: number | null;
-  again: boolean;
-  educational_degree: string | null;
-  marital_state: string | null;
+  id?: number | null;
+  name?: string | null;
+  stage?: string | null;
+  sold_id?: string | null;
+  mohafza_code?: number | null | undefined;
+  qualification_code?: number | null;
+  again?: boolean;
+  educational_degree?: string | null;
+  marital_state?: string | null;
 };
 
 export type Case = {

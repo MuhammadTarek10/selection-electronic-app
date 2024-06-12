@@ -24,14 +24,15 @@ npm run dev
 ## Features
 
 1. Dashboard
-   1. See all Examiners (Table). [TODO] [DB]
-   2. How many technicians (Container). [TODO] [DB]
+   1. See all Examiners (Table). [TODO] [DB] [UI]
+   2. How many technicians (Container). [TODO] [DB] [UI]
    3. Noticeable Soldiers (Table). [TODO] [DB]
    4. Getting exams value (Button to another page). [TODO] [DB]
    5. Export data to a csv and xlsx. [TODO]
 2. Cases
    1. See all cases (Table). [TODO] [DB]
-   2. Change case of a soldier (Dropdown). [TODO] [DB]
+   2. See number of cases (Mental - Medical) [TODO]
+   3. Change case of a soldier (Dropdown). [TODO] [DB]
 3. Fixes
    1. Fix Stage (Text Input - Button). [TODO] [DB]
    2. Make noticeable. [TODO] [DB]
