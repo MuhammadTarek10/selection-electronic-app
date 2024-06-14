@@ -58,7 +58,7 @@ export function DataTable<TData, TValue>({ columns, data, divClassname }: DataTa
           ) : (
             <TableRow>
               <TableCell colSpan={columns.length} className="h-24 text-center">
-                No results.
+                لا يوجد بيانات
               </TableCell>
             </TableRow>
           )}

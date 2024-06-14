@@ -1,7 +1,7 @@
 export const examinersDummy = {
   examiners: [
     {
-      name: "Ahmed Mohamed",
+      name: "Ahmed Khaled",
       sold_id: "2024924124252",
       mohafza_code: 92,
       again: true,
@@ -12,7 +12,7 @@ export const examinersDummy = {
       name: "Mohamed Ahmed",
       sold_id: "2024924124252",
       mohafza_code: 92,
-      again: false,
+      again: true,
       qualification_code: 2,
       stage: "20242",
     },

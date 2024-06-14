@@ -20,12 +20,7 @@ const Dashboard = async () => {
           <NoticeableTable props={examinersDummy} />
         </div>
       </div>
-      <div className="flex flex-wrap gap-4">
-        <NumberContainer props={data} />
-        <NumberContainer props={data} />
-        <NumberContainer props={data} />
-        <NumberContainer props={data} />
-      </div>
+      <div className="flex flex-wrap gap-4"></div>
     </div>
   );
 };
