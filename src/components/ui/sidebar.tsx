@@ -52,7 +52,7 @@ export default function Sidebar({
     <>
       <div className={`${className}${appendClass}`}>
         <div className="p-2 flex">
-          <Link href="/">
+          <Link href="/dashboard">
             {/*eslint-disable-next-line*/}
             <img
               src="/images/logo.png"

@@ -6,7 +6,7 @@ const DashboardLayout = (props: { children: React.ReactNode }) => {
   const [show, setShow] = useState(false);
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-screen overflow-hidden">
       <div className="flex">
         <Sidebar show={show} setter={setShow} />
       </div>

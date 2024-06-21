@@ -1,6 +1,14 @@
+import { NumberContainer } from "@/components/ui/number-container";
+
 const AnalyticsPage = () => {
+  const data = {
+    title: "التدريب المهني",
+    value: "20",
+  };
   return (
-    <div>AnalyticsPage</div>
-  )
-}
-export default AnalyticsPage
+    <div>
+      <NumberContainer props={data} />
+    </div>
+  );
+};
+export default AnalyticsPage;

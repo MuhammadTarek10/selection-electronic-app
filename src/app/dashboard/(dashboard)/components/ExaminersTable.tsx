@@ -27,7 +27,7 @@ export const ExaminersTable = ({ props }: IProps) => {
   };
 
   return (
-    <div className="flex flex-col w-full h-full">
+    <div className="flex flex-col w-full">
       <input
         type="text"
         placeholder="ابحث بالاسم أو الرقم العسكري"
