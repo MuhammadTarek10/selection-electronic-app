@@ -12,7 +12,7 @@ export const examinersDummy = {
       name: "Mohamed Ahmed",
       sold_id: "2024924124252",
       mohafza_code: 92,
-      again: true,
+      again: false,
       qualification_code: 2,
       stage: "20242",
     },

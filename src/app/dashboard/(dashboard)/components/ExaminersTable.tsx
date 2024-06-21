@@ -19,13 +19,15 @@ export const ExaminersTable = ({ props }: IProps) => {
   const handleOnChange = (e: string) => {
     if (!e) return setExaminers(props.examiners);
     const filtered = props.examiners.filter(
-      (examiner) => examiner.name?.toLowerCase().includes(e) || examiner.sold_id?.toString().includes(e)
+      (examiner) =>
+        examiner.name?.toLowerCase().includes(e) ||
+        examiner.sold_id?.toString().includes(e)
     );
     setExaminers(filtered);
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full h-full">
       <input
         type="text"
         placeholder="ابحث بالاسم أو الرقم العسكري"
@@ -33,9 +35,7 @@ export const ExaminersTable = ({ props }: IProps) => {
         tabIndex={0}
         onChange={(e) => handleOnChange(e.target.value)}
       />
-      <div className="flex-1 border-2 rounded-lg border-white/25 col-span-2">
-        <DataTable columns={columns} data={examiners} divClassname="max-h-[650px]" />
-      </div>
+      <DataTable columns={columns} data={examiners} />
     </div>
   );
 };

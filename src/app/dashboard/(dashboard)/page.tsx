@@ -11,11 +11,9 @@ const Dashboard = async () => {
 
   return (
     <div id="container" className="flex flex-col gap-4">
-      <div className="flex flex-col gap-4 md:flex-row" id="header">
-        <div className="flex-1">
-          <ExaminersTable props={examinersDummy} />
-        </div>
-        <div className="flex flex-col gap-4">
+      <div className="flex gap-4 flex-col sm:flex-row" id="header">
+        <ExaminersTable props={examinersDummy} />
+        <div className="h-[90vh]">
           <NumberContainer props={data} />
           <NoticeableTable props={examinersDummy} />
         </div>

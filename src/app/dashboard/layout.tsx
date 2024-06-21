@@ -1,14 +1,17 @@
-import { CustomSidebar } from "./components/CustomSidebar";
+"use client";
+import Sidebar from "@/components/ui/sidebar";
+import { useState } from "react";
 
 const DashboardLayout = (props: { children: React.ReactNode }) => {
+  const [show, setShow] = useState(false);
+
   return (
-    <div>
-      <CustomSidebar />
-      <div className="ml-[210px] h-full">
-        <header className="h-[60px] border-b border-black/10">
-          <div className="h-full w-full flex justify-end items-center px-6"></div>
-        </header>
-        <div className="h-[calc(100vh-60px)]">{props.children}</div>
+    <div className="flex min-h-screen">
+      <div className="flex">
+        <Sidebar show={show} setter={setShow} />
+      </div>
+      <div className="flex flex-col my-8 mx-4 flex-grow w-screen md:w-full min-h-screen">
+        {props.children}
       </div>
     </div>
   );
