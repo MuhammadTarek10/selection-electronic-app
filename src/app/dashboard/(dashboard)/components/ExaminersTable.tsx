@@ -5,20 +5,12 @@ import { Examiner } from "@/data/models";
 import { useState } from "react";
 import { columns } from "./ExaminerTableColumns";
 
-type ExaminerTableProps = {
-  examiners: Examiner[];
-};
-
-type IProps = {
-  props: ExaminerTableProps;
-};
-
-export const ExaminersTable = ({ props }: IProps) => {
-  const [examiners, setExaminers] = useState<Examiner[]>(props.examiners);
+export const ExaminersTable = ({ examiners }: { examiners: Examiner[] }) => {
+  const [filteredExaminers, setExaminers] = useState<Examiner[]>(examiners);
 
   const handleOnChange = (e: string) => {
-    if (!e) return setExaminers(props.examiners);
-    const filtered = props.examiners.filter(
+    if (!e) return setExaminers(examiners);
+    const filtered = examiners.filter(
       (examiner) =>
         examiner.name?.toLowerCase().includes(e) ||
         examiner.sold_id?.toString().includes(e)
@@ -27,7 +19,7 @@ export const ExaminersTable = ({ props }: IProps) => {
   };
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col p-4">
       <input
         type="text"
         placeholder="ابحث بالاسم أو الرقم العسكري"
@@ -35,7 +27,11 @@ export const ExaminersTable = ({ props }: IProps) => {
         tabIndex={0}
         onChange={(e) => handleOnChange(e.target.value)}
       />
-      <DataTable columns={columns} data={examiners} />
+      <DataTable
+        columns={columns}
+        data={filteredExaminers}
+        divClassname="max-h-[88vh]"
+      />
     </div>
   );
 };

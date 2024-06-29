@@ -6,7 +6,7 @@ const AnalyticsPage = () => {
     value: "20",
   };
   return (
-    <div>
+    <div className="p-4">
       <NumberContainer props={data} />
     </div>
   );

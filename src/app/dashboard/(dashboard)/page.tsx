@@ -7,6 +7,6 @@ const Dashboard = async () => {
     value: "50",
   };
 
-  return <ExaminersTable props={examinersDummy} />;
+  return <ExaminersTable examiners={examinersDummy} />;
 };
 export default Dashboard;

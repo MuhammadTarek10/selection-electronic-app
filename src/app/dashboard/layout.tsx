@@ -1,19 +1,12 @@
 "use client";
-import Sidebar from "@/components/ui/sidebar";
-import { useState } from "react";
+import Sidebar from "./components/Sidebar";
 
-const DashboardLayout = (props: { children: React.ReactNode }) => {
-  const [show, setShow] = useState(false);
-
+const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="flex min-h-screen overflow-hidden">
-      <div className="flex">
-        <Sidebar show={show} setter={setShow} />
-      </div>
-      <div className="flex flex-col my-8 mx-4 flex-grow w-screen md:w-full min-h-screen">
-        {props.children}
-      </div>
-    </div>
+    <main className="flex h-screen w-full overflow-hidden">
+      <Sidebar />
+      <div className="flex flex-col size-full">{children}</div>
+    </main>
   );
 };
 export default DashboardLayout;
