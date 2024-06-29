@@ -395,7 +395,7 @@ body {
   }
 
   .sidebar-logo {
-    @apply 2xl:text-26 text-[26px] font-bold text-white-1 max-xl:hidden;
+    @apply 2xl:text-26 text-[26px] font-bold text-white-1 max-xl:hidden text-center;
   }
 
   .sidebar-link {
