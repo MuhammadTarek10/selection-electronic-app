@@ -1,4 +1,11 @@
+import { examinersDummy } from "@/data/dummy/data";
+import { DashboardTable } from "./components/DashboardTable";
+
 const Dashboard = async () => {
-  return <div>Dashboard</div>;
+  return (
+    <div>
+      <DashboardTable examiners={examinersDummy} />
+    </div>
+  );
 };
 export default Dashboard;

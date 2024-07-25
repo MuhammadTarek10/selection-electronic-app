@@ -24,6 +24,11 @@ const AnalyticsPage = () => {
       return acc;
     }, {} as LabelCount);
 
+
+    // TODO: Marital Status
+    // TODO: Mohafza Code
+    // TODO: Predict Noted
+
   return (
     <div className="flex justify-between items-center p-2 m-2">
       <div className="flex flex-col justify-center items-center gap-4 border rounded-lg p-4">

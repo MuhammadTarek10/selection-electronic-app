@@ -1,7 +1,22 @@
 "use client";
 
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { ColumnDef, SortingState, flexRender, getCoreRowModel, getPaginationRowModel, getSortedRowModel, useReactTable } from "@tanstack/react-table";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import {
+  ColumnDef,
+  SortingState,
+  flexRender,
+  getCoreRowModel,
+  getPaginationRowModel,
+  getSortedRowModel,
+  useReactTable,
+} from "@tanstack/react-table";
 import * as React from "react";
 
 interface DataTableProps<TData, TValue> {
@@ -10,7 +25,11 @@ interface DataTableProps<TData, TValue> {
   divClassname?: string;
 }
 
-export function DataTable<TData, TValue>({ columns, data, divClassname }: DataTableProps<TData, TValue>) {
+export function DataTable<TData, TValue>({
+  columns,
+  data,
+  divClassname,
+}: DataTableProps<TData, TValue>) {
   const [sorting, setSorting] = React.useState<SortingState>([]);
 
   const table = useReactTable({
@@ -31,7 +50,7 @@ export function DataTable<TData, TValue>({ columns, data, divClassname }: DataTa
   });
 
   return (
-    <div className="flex rounded-md border text-center m-4">
+    <div className="flex rounded-md border text-center">
       <Table divClassname={divClassname}>
         <TableHeader className="top-0 sticky bg-gray-800">
           {table.getHeaderGroups().map((headerGroup) => (
@@ -39,7 +58,12 @@ export function DataTable<TData, TValue>({ columns, data, divClassname }: DataTa
               {headerGroup.headers.map((header) => {
                 return (
                   <TableHead className="text-center sticky" key={header.id}>
-                    {header.isPlaceholder ? null : flexRender(header.column.columnDef.header, header.getContext())}
+                    {header.isPlaceholder
+                      ? null
+                      : flexRender(
+                          header.column.columnDef.header,
+                          header.getContext()
+                        )}
                   </TableHead>
                 );
               })}
@@ -49,9 +73,13 @@ export function DataTable<TData, TValue>({ columns, data, divClassname }: DataTa
         <TableBody>
           {table.getRowModel().rows?.length ? (
             table.getRowModel().rows.map((row) => (
-              <TableRow key={row.id} data-state={row.getIsSelected() && "selected"}>
+              <TableRow
+                key={row.id}
+                data-state={row.getIsSelected() && "selected"}>
                 {row.getVisibleCells().map((cell) => (
-                  <TableCell key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</TableCell>
+                  <TableCell key={cell.id}>
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </TableCell>
                 ))}
               </TableRow>
             ))

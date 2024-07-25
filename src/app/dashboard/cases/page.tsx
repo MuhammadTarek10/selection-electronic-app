@@ -11,7 +11,7 @@ const CasesPage = () => {
         <StatsCard count={2} label="مست طبي" />
       </div>
 
-      <div>
+      <div className="m-4">
         <DataTable columns={columns} data={casesDummy} />
       </div>
     </div>

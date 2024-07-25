@@ -3,11 +3,10 @@
 import { DataTable } from "@/components/ui/data-table";
 import { Examiner } from "@/data/models";
 import { useState } from "react";
-import { columns } from "./ExaminerTableColumns";
+import { columns } from "../columns";
 
-export const ExaminersTable = ({ examiners }: { examiners: Examiner[] }) => {
+export const DashboardTable = ({ examiners }: { examiners: Examiner[] }) => {
   const [filteredExaminers, setExaminers] = useState<Examiner[]>(examiners);
-
   const handleOnChange = (e: string) => {
     if (!e) return setExaminers(examiners);
     const filtered = examiners.filter(
@@ -19,7 +18,7 @@ export const ExaminersTable = ({ examiners }: { examiners: Examiner[] }) => {
   };
 
   return (
-    <div className="flex flex-col p-4">
+    <div className="flex flex-col m-4">
       <input
         type="text"
         placeholder="ابحث بالاسم أو الرقم العسكري"
@@ -27,11 +26,8 @@ export const ExaminersTable = ({ examiners }: { examiners: Examiner[] }) => {
         tabIndex={0}
         onChange={(e) => handleOnChange(e.target.value)}
       />
-      <DataTable
-        columns={columns}
-        data={filteredExaminers}
-        divClassname="max-h-[88vh]"
-      />
+      <DataTable columns={columns} data={filteredExaminers} />;
     </div>
   );
+  return <div>DashboardTable</div>;
 };

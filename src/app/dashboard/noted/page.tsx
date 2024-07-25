@@ -20,10 +20,13 @@ const NotedPage = () => {
           <h2 className="text-2xl font-bold">{noted} :الملحوظين</h2>
         </div>
       </div>
-      <DataTable
-        columns={columns}
-        data={examinersDummy.filter((examiner) => examiner.again == true)}
-      />
+
+      <div className="m-4">
+        <DataTable
+          columns={columns}
+          data={examinersDummy.filter((examiner) => examiner.again == true)}
+        />
+      </div>
     </div>
   );
 };
