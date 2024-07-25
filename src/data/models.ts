@@ -18,6 +18,7 @@ export type Case = {
   final_opinion?: string | null;
   final_hospital_result?: string | null;
   examiner_status?: string | null;
+  complaint?: string | null;
 };
 
 export type ExaminerExam = {

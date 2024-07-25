@@ -136,3 +136,123 @@ export const examinersDummy = [
     stage: "20242",
   },
 ];
+
+export const casesDummy = [
+  {
+    id: 1,
+    name: "Case 1",
+    examiner_status: "مست نفسي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "عودة للوحدة",
+    sold_id: "2024924124252",
+  },
+  {
+    id: 2,
+    name: "Case 2",
+    examiner_status: "مست طبي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "عودة للوحدة",
+    sold_id: "2024924124252",
+  },
+  {
+    id: 3,
+    name: "Case 3",
+    examiner_status: "مست نفسي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "عودة للوحدة",
+    sold_id: "2024924124252",
+  },
+  {
+    id: 4,
+    name: "Case 4",
+    examiner_status: "مست طبي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "عودة للوحدة",
+    sold_id: "2024924124252",
+  },
+  {
+    id: 5,
+    name: "Case 5",
+    examiner_status: "مست نفسي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "عودة للوحدة",
+    sold_id: "2024924124252",
+  },
+  {
+    id: 6,
+    name: "Case 6",
+    examiner_status: "مست طبي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "عودة للوحدة",
+    sold_id: "2024924124252",
+  },
+  {
+    id: 7,
+    name: "Case 7",
+    examiner_status: "مست نفسي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "رفت نفسي",
+    sold_id: "2024924124252",
+  },
+  {
+    id: 8,
+    name: "Case 8",
+    examiner_status: "مست طبي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "رفت طبي",
+    sold_id: "2024924124252",
+  },
+  {
+    id: 9,
+    name: "Case 9",
+    examiner_status: "مست نفسي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "انتظار",
+    sold_id: "2024924124252",
+  },
+  {
+    id: 10,
+    name: "Case 10",
+    examiner_status: "مست طبي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "انتظار",
+    sold_id: "2024924124252",
+  },
+  {
+    id: 11,
+    name: "Case 11",
+    examiner_status: "مست نفسي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "انتظار",
+    sold_id: "2024924124252",
+  },
+  {
+    id: 12,
+    name: "Case 12",
+    examiner_status: "مست طبي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "انتظار",
+    sold_id: "2024924124252",
+  },
+  {
+    id: 13,
+    name: "Case 13",
+    examiner_status: "مست نفسي",
+    complaint:
+      "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet",
+    final_hospital_result: "انتظار",
+    sold_id: "2024924124252",
+  },
+];

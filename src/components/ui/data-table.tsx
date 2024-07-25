@@ -31,9 +31,9 @@ export function DataTable<TData, TValue>({ columns, data, divClassname }: DataTa
   });
 
   return (
-    <div className="rounded-md border w-full text-center">
+    <div className="flex rounded-md border text-center m-4">
       <Table divClassname={divClassname}>
-        <TableHeader className="w-full top-0 sticky bg-gray-800">
+        <TableHeader className="top-0 sticky bg-gray-800">
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id}>
               {headerGroup.headers.map((header) => {
