@@ -30,3 +30,9 @@ export type Exam = {
   id?: number;
   value?: string;
 };
+
+export type ExaminerQuestion = {
+  name?: string;
+  sold_id?: string;
+  number_of_questions?: number;
+};

@@ -16,6 +16,14 @@
   }
 }
 
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

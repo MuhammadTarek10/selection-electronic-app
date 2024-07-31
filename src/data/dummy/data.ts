@@ -256,3 +256,66 @@ export const casesDummy = [
     sold_id: "2024924124252",
   },
 ];
+
+export const questionsDummy = [
+  {
+    name: "Ahmed Mohamed",
+    sold_id: "2024921700165",
+    qualification_code: "1",
+    number_of_questions: 135,
+  },
+  {
+    name: "Fathy Khaled",
+    sold_id: "2024921700165",
+    qualification_code: "2",
+    number_of_questions: 135,
+  },
+  {
+    name: "Osama Hamed",
+    sold_id: "2024921700165",
+    qualification_code: "8",
+    number_of_questions: 97,
+  },
+  {
+    name: "Ahmed Mohamed",
+    sold_id: "2024924701165",
+    qualification_code: "1",
+    number_of_questions: 42,
+  },
+  {
+    name: "Ahmed Mohamed",
+    sold_id: "2024921700165",
+    qualification_code: "2",
+    number_of_questions: 93,
+  },
+  {
+    name: "Ahmed Mohamed",
+    sold_id: "2024921700165",
+    qualification_code: "1",
+    number_of_questions: 135,
+  },
+  {
+    name: "Ahmed Mohamed",
+    sold_id: "2024921700165",
+    qualification_code: "1",
+    number_of_questions: 135,
+  },
+  {
+    name: "Ahmed Mohamed",
+    sold_id: "2024921700165",
+    qualification_code: "1",
+    number_of_questions: 135,
+  },
+  {
+    name: "Mohamed Ahmed",
+    sold_id: "2024921700165",
+    qualification_code: "2",
+    number_of_questions: 85,
+  },
+  {
+    name: "Ahmed Mohamed",
+    sold_id: "2024921700165",
+    qualification_code: "1",
+    number_of_questions: 135,
+  },
+];
