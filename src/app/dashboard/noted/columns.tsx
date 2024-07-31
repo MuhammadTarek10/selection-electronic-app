@@ -12,7 +12,8 @@ export const columns: ColumnDef<Examiner>[] = [
     header: ({ column }) => <SortableButton title="المؤهل" column={column} />,
     cell: ({ row }) => {
       const education = ConvertQualificationCode(
-        row.original.qualification_code
+        row.original.qualification_code,
+        row.original.sold_id!
       );
 
       return (
@@ -21,6 +22,7 @@ export const columns: ColumnDef<Examiner>[] = [
             "bg-green-800": education === "عليا",
             "bg-blue-800": education === "متوسط",
             "bg-yellow-800": education === "فوق متوسط",
+            "bg-gray-500": education === "تدريب مهني",
           })}>
           {education}
         </div>

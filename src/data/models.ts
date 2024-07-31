@@ -23,16 +23,22 @@ export type Case = {
 
 export type ExaminerExam = {
   examiner?: Examiner;
-  exams?: Exam[];
+  optical?: Exam;
+  hearing?: Exam;
+  back_and_legs?: Exam;
+  grip_right?: Exam;
+  grip_left?: Exam;
+  effort?: Exam;
 };
 
 export type Exam = {
   id?: number;
-  value?: string;
+  value?: number;
 };
 
 export type ExaminerQuestion = {
   name?: string;
   sold_id?: string;
+  qualification_code: number;
   number_of_questions?: number;
 };
